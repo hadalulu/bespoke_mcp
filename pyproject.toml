@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "newsroom-mcp"
+version = "0.1.0"
+description = "A small MCP experiment for structured journalism and usage policies"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=2.0,<3",
+  "pydantic>=2.12,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+newsroom-server = "newsroom.server:main"
+newsroom-host = "newsroom.host:main"
+
+[tool.setuptools.package-data]
+newsroom = ["policies/*.json", "stories/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["newsroom*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
