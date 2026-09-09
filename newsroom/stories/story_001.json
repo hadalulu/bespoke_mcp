@@ -1,0 +1,39 @@
+{
+  "id": "story_001",
+  "title": "Harbor ferry pilot begins after weather delay",
+  "verified_facts": [
+    {"id": "fact_001", "text": "Bellwether City began a six-month electric ferry pilot on 12 August 2026.", "material": true, "evidence_ids": ["ev_001"], "confidence": "confirmed"},
+    {"id": "fact_002", "text": "The launch occurred nine days later than scheduled because high winds prevented required safety drills.", "material": true, "evidence_ids": ["ev_002"], "confidence": "confirmed"},
+    {"id": "fact_003", "text": "The vessel carries up to 80 passengers.", "material": false, "evidence_ids": ["ev_003"], "confidence": "confirmed"},
+    {"id": "fact_004", "text": "Officials estimate the pilot could reduce route emissions by 18 percent, but the result has not yet been measured.", "material": true, "evidence_ids": ["ev_004"], "confidence": "estimated"}
+  ],
+  "sources_evidence": [
+    {"id": "ev_001", "description": "City launch log dated 12 August 2026", "provenance": "Bellwether City transit department record"},
+    {"id": "ev_002", "description": "Harbor master weather and drill log", "provenance": "Bellwether Harbor Authority"},
+    {"id": "ev_003", "description": "Manufacturer capacity certificate", "provenance": "Fictional vessel certificate"},
+    {"id": "ev_004", "description": "Pre-pilot emissions projection", "provenance": "Transit department model, not an observed result"}
+  ],
+  "key_framing_boundaries": {
+    "allowed": ["public_transit_pilot", "weather_delayed_launch", "unmeasured_emissions_goal"],
+    "not_allowed": ["proven_emissions_success", "safety_failure_caused_delay"]
+  },
+  "required_disclosures": [
+    {"id": "disc_001", "text": "The 18 percent emissions figure is a projection, not a measured result.", "required_when": "all_uses"}
+  ],
+  "quotes": [
+    {"id": "quote_001", "speaker": "Transit director Mira Sol", "exact_text": "The pilot will tell us what works on this route.", "source_evidence_id": "ev_001", "verified": true}
+  ],
+  "chronology": [
+    {"date": "2026-08-03", "event": "Original launch date; safety drills postponed due to high winds."},
+    {"date": "2026-08-12", "event": "Pilot service began."}
+  ],
+  "editorial_confidence": [
+    {"subject": "pilot_launch", "level": "confirmed", "note": "Confirmed by city and harbor records."},
+    {"subject": "emissions_reduction", "level": "estimated", "note": "Projection only; measurement will occur during the pilot."}
+  ],
+  "other_editorial_judgment": ["Do not imply the weather delay was evidence of a safety defect."],
+  "media": [
+    {"id": "media_001", "kind": "photo", "description": "Electric ferry at the terminal", "provenance": "Newsroom staff photograph, 12 August 2026", "attribution": "Photo: Bellwether Newsroom"}
+  ],
+  "story_usage_policy": null
+}

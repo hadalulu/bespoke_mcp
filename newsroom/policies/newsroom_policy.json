@@ -1,0 +1,36 @@
+{
+  "id": "newsroom_policy",
+  "version": "1.0",
+  "must": [
+    "PRESERVE_VERIFIED_FACTS",
+    "RESPECT_FRAMING_BOUNDARIES",
+    "INCLUDE_REQUIRED_DISCLOSURES",
+    "PRESERVE_MATERIAL_CONTEXT",
+    "PRESERVE_EDITORIAL_CONFIDENCE",
+    "PRESERVE_QUOTE_ACCURACY",
+    "APPLY_RULES_TO_CREATIVE_TRANSFORMATIONS"
+  ],
+  "must_not": [
+    "INVENT_FACTS",
+    "INVENT_QUOTES",
+    "MATERIALLY_ALTER_QUOTES",
+    "USE_DISALLOWED_FRAMING",
+    "CREATE_MISLEADING_OMISSIONS",
+    "OVERSTATE_CERTAINTY"
+  ],
+  "rules": [
+    {"code": "PRESERVE_VERIFIED_FACTS", "description": "Summaries and adaptations must preserve the factual meaning of verified facts."},
+    {"code": "RESPECT_FRAMING_BOUNDARIES", "description": "Uses must remain within the package's allowed framing and avoid prohibited framing."},
+    {"code": "INCLUDE_REQUIRED_DISCLOSURES", "description": "Every disclosure relevant to a use must be communicated to the reader."},
+    {"code": "PRESERVE_MATERIAL_CONTEXT", "description": "Details may be omitted unless the omission would materially change a reasonable reader's interpretation."},
+    {"code": "PRESERVE_EDITORIAL_CONFIDENCE", "description": "Developing, disputed, alleged, estimated, uncertain, or unverified information must not be stated as established."},
+    {"code": "PRESERVE_QUOTE_ACCURACY", "description": "Direct quotations and their attribution must remain exact; paraphrases must not be presented as quotes."},
+    {"code": "APPLY_RULES_TO_CREATIVE_TRANSFORMATIONS", "description": "Changing format does not relax factual, contextual, framing, disclosure, attribution, quote, or confidence rules."},
+    {"code": "INVENT_FACTS", "description": "Do not add facts unsupported by the editorial package."},
+    {"code": "INVENT_QUOTES", "description": "Do not create quotations absent from the editorial package."},
+    {"code": "MATERIALLY_ALTER_QUOTES", "description": "Do not alter verified quotation text while presenting it as direct speech."},
+    {"code": "USE_DISALLOWED_FRAMING", "description": "Do not use any framing explicitly prohibited by the package."},
+    {"code": "CREATE_MISLEADING_OMISSIONS", "description": "Do not omit material context in a way that changes the reporting's meaning."},
+    {"code": "OVERSTATE_CERTAINTY", "description": "Do not represent information with greater certainty than the package supports."}
+  ]
+}

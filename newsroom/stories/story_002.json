@@ -1,0 +1,45 @@
+{
+  "id": "story_002",
+  "title": "School board reviews allegation involving youth program",
+  "verified_facts": [
+    {"id": "fact_101", "text": "The Northbank School Board opened an independent review of the after-school grant program on 4 September 2026.", "material": true, "evidence_ids": ["ev_101"], "confidence": "confirmed"},
+    {"id": "fact_102", "text": "A complaint alleges that attendance totals were overstated; the allegation has not been substantiated.", "material": true, "evidence_ids": ["ev_102"], "confidence": "alleged"},
+    {"id": "fact_103", "text": "No student is accused of wrongdoing.", "material": true, "evidence_ids": ["ev_101"], "confidence": "confirmed"},
+    {"id": "fact_104", "text": "The board expects an initial report in October.", "material": false, "evidence_ids": ["ev_101"], "confidence": "developing"}
+  ],
+  "sources_evidence": [
+    {"id": "ev_101", "description": "Board resolution commissioning an independent review", "provenance": "Northbank School Board public packet"},
+    {"id": "ev_102", "description": "Redacted complaint received by the board", "provenance": "Copy authenticated by board clerk; claims not independently substantiated"}
+  ],
+  "key_framing_boundaries": {
+    "allowed": ["independent_review", "unsubstantiated_attendance_allegation"],
+    "not_allowed": ["fraud_was_proven", "students_participated_in_wrongdoing"]
+  },
+  "required_disclosures": [
+    {"id": "disc_101", "text": "The attendance claim is an allegation and has not been substantiated.", "required_when": "all_uses"}
+  ],
+  "quotes": [
+    {"id": "quote_101", "speaker": "Board chair Elena Park", "exact_text": "The review should establish the record before conclusions are drawn.", "source_evidence_id": "ev_101", "verified": true}
+  ],
+  "chronology": [
+    {"date": "2026-09-01", "event": "Board received a redacted complaint."},
+    {"date": "2026-09-04", "event": "Board commissioned an independent review."}
+  ],
+  "editorial_confidence": [
+    {"subject": "review_opened", "level": "confirmed", "note": "Recorded in the public board resolution."},
+    {"subject": "attendance_overstatement", "level": "alleged", "note": "Contained in a complaint and not substantiated."}
+  ],
+  "other_editorial_judgment": ["The identity of the minor mentioned in source material is not necessary to public understanding."],
+  "media": [
+    {"id": "media_101", "kind": "document", "description": "Redacted first page of board resolution", "provenance": "Northbank School Board public packet", "attribution": "Northbank School Board"}
+  ],
+  "story_usage_policy": {
+    "version": "1.0",
+    "additional_requirements": ["IDENTIFY_ALLEGATIONS_AS_ALLEGATIONS"],
+    "additional_restrictions": ["DO_NOT_IDENTIFY_MINOR"],
+    "rule_descriptions": {
+      "IDENTIFY_ALLEGATIONS_AS_ALLEGATIONS": "Every reference to the attendance claim must identify it as an unsubstantiated allegation.",
+      "DO_NOT_IDENTIFY_MINOR": "Do not publish or infer the identity of the minor mentioned in source material."
+    }
+  }
+}
